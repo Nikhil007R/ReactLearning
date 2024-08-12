@@ -1,0 +1,44 @@
+.appContainer{
+  display: flex;
+}
+.content{
+  width: 100%;
+}
+.sidebar{
+  min-height: 720px;
+}
+/* .formcontainer{
+  width: 80%;
+  margin: 20px;
+} */
+
+.post_card{
+  margin: 20px;
+}
+.tag{
+  margin: 0px 3px;
+}
+.deletIcon{
+  font-size: 20px;
+}
+
+  .reactions{
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+.create-post{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+.create-post label{
+  font-weight: 600;
+  text-decoration: line-through;
+}
+.postMessage{
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+}
