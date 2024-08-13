@@ -17,10 +17,16 @@ function Form(){
         const username = usernameElement.current.value;
         const postTitle = postTitleElement.current.value;
         const postContent = postContentElement.current.value;
-        const reaction = reactionElement.current.value;
+        const reactions = reactionElement.current.value;
         const tags = tagsElement.current.value.split(" ");
 
-        addPost(username, postTitle, postContent, reaction, tags);
+        usernameElement.current.value = ""
+        postTitleElement.current.value = ""
+        postContentElement.current.value = ""
+        reactionElement.current.value = ""
+        tagsElement.current.value = ""
+
+        addPost(username, postTitle, postContent, reactions, tags);
     }
 
     return (

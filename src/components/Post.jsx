@@ -4,7 +4,7 @@ import {PostList} from "../store/post-list-store";
 
 function Post({ post }) {
 
-  const {deletePost} = useContext(PostList);
+  const {deletePost, postList} = useContext(PostList);
 
   return (
     <>
@@ -31,7 +31,7 @@ function Post({ post }) {
             style={{ margin: "15px 0 0 0" }}
           >
             This Post have been reacted by
-            <span className="reactions"> {post.reactions + "K"} </span>
+            {postList.length <= 30 ? <span className="reactions"> {post.reactions.likes}K  </span>: <span className="reactions"> {post.reactions}K  </span>}
             people.
           </div>
         </div>
